@@ -6,6 +6,7 @@
 :root {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
+    color: #6C6C6C;
     text-align: justify;
     line-height: auto;
 }
@@ -13,8 +14,8 @@
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 20px 32px;
+    background-color: #F5F5F5;
 }
 
 .logo {
@@ -22,18 +23,68 @@ header {
     color: #EF5F4C;
     font-size: 20px;
     font-weight: bold;
+    line-height: 160%;
+    align-items: center;
     gap: 8px;
 }
 
 .header-items {
     display: flex;
     gap: 16px;
-    color: #6C6C6C;
     font-size: 16px;
+    line-height: 150%;
     align-items: center;
 }
 
 .header-items img:last-child {
     width: 40px;
     height: 40px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px;
+    background-color: #F5F5F5;
+}
+
+.description {
+    display: flex;
+    gap: 32px;
+    width: 592px;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text span {
+    color: #313131;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 280px;
+}
+
+.info-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 170%;
 }
