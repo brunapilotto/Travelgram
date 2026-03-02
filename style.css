@@ -89,7 +89,7 @@ a {
     gap: 8px;
 }
 
-.text span {
+.text h1 {
     color: var(--text-color-primary);
     font: var(--text-h1);
 }
