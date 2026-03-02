@@ -7,21 +7,29 @@
 :root {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    color: #6C6C6C;
-    text-align: justify;
-    line-height: auto;
+    --brand-color: #EF5F4C;
+    --background-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: rgba(255, 255, 255, 0.56);
+    --text-color-primary: #313131;
+    --text-color-secondary: #6c6c6c;
+}
+
+body {
+    color: var(--text-color-secondary);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     margin: 20px 32px;
-    background-color: #F5F5F5;
+    background-color: var(--surface-color);
 }
 
 .logo {
     display: flex;
-    color: #EF5F4C;
+    color: var(--brand-color);
     font-size: 20px;
     font-weight: bold;
     line-height: 160%;
@@ -47,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 32px;
-    background-color: #F5F5F5;
+    background-color: var(--surface-color);
 }
 
 .description {
@@ -64,7 +72,7 @@ header {
 }
 
 .text span {
-    color: #313131;
+    color: var(--text-color-primary);
     font-size: 32px;
     font-weight: bold;
     line-height: 125%;
