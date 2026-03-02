@@ -5,8 +5,6 @@
 }
 
 :root {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
     --brand-color: #EF5F4C;
     --background-color: #FFFFFF;
     --surface-color: #F5F5F5;
@@ -14,9 +12,16 @@
     --shape-transparency: rgba(255, 255, 255, 0.56);
     --text-color-primary: #313131;
     --text-color-secondary: #6c6c6c;
+
+    --font-family: "Poppins", sans-serif;
+    --text-h1: bold 32px/125% var(--font-family);
+    --text-md: 14px/170% var(--font-family);
+    --text-sm: 12px/170% var(--font-family);
+    --text: 16px/150% var(--font-family);
 }
 
 body {
+    font: var(--text);
     color: var(--text-color-secondary);
 }
 
@@ -40,8 +45,6 @@ header {
 .header-items {
     display: flex;
     gap: 16px;
-    font-size: 16px;
-    line-height: 150%;
     align-items: center;
 }
 
@@ -73,14 +76,11 @@ header {
 
 .text span {
     color: var(--text-color-primary);
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 125%;
+    font: var(--text-h1);
 }
 
 .text p {
-    font-size: 14px;
-    line-height: 170%;
+    font: var(--text-md);
 }
 
 .info {
@@ -94,8 +94,7 @@ header {
     display: flex;
     gap: 8px;
     align-items: center;
-    font-size: 14px;
-    line-height: 170%;
+    font: var(--text-md);
 }
 
 .gallery {
